@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.inline-flex.text-white.bg-indigo-500.border-0.py-2.px-6.focus\:outline-none.hover\:bg-indigo-600.rounded.text-lg {
+    background: #ff0080;
+    border-radius: 30px !important;
+    padding: 12px 35px 12px 35px !important;
+    transition: 0.5s;
+  }
+
+  .inline-flex.text-white.bg-indigo-500.border-0.py-2.px-6.focus\:outline-none.hover\:bg-indigo-600.rounded.text-lg:hover {
+    background: #ca0065;
+  }
+
+  .ml-4.inline-flex.text-gray-700.bg-gray-100.border-0.py-2.px-6.focus\:outline-none.hover\:bg-gray-200.rounded.text-lg {
+    background: #fff;
+    border-radius: 30px !important;
+    padding: 12px 35px 12px 35px !important;
+    transition: 0.8s;
+    border: solid 2px #ca0065 !important;
+    color: #ca0065;
+  }
+
+  .ml-4.inline-flex.text-gray-700.bg-gray-100.border-0.py-2.px-6.focus\:outline-none.hover\:bg-gray-200.rounded.text-lg:hover {
+    border: solid 2px #ca0065 !important;
+    background: #ca0065;
+    color: #fff;
+  }
+
+  .inline-block.w-8.h-8.text-gray-400.mb-8 {
+    color: pink;
+  }
+
+  .inline-block.h-1.w-10.rounded.bg-indigo-500.mt-8.mb-6 {
+    background-color: #ff0080;
+  }
+
+  .h-1.w-20.bg-indigo-500.rounded {
+    background-color: #f08;
+  }
+
+  .tracking-widest.text-indigo-500.text-xs.font-medium.title-font {
+    color: #f08;
+  }
