@@ -1,13 +1,13 @@
 @include('includes.head')
 
-@yield('head')  
+@yield('head')
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Questions') }}
         </h2>
     </x-slot>
-    
+
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <a href="{{ route("zorgvraag.reaction") }}" class="btn btn-primary bg-primary fs-6 mt-4 mb-5">Bericht schrijven</a>

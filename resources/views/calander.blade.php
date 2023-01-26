@@ -1,6 +1,6 @@
 @include('includes.head')
 
-@yield('head')  
+@yield('head')
 <x-app-layout>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -110,7 +110,7 @@
             });
         });
         function displayMessage(message) {
-            toastr.success(message, 'Event');            
+            toastr.success(message, 'Event');
         }
     </script>
 </body>
