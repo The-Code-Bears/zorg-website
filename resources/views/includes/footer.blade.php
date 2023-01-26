@@ -1,7 +1,7 @@
 
     <!-- Footer -->
     <footer
-            class="text-center text-lg-start text-dark fixed-bottom"
+            class="text-center text-lg-start text-dark"
             style="background-color: #ECEFF1"
             >
       <!-- Section: Social media -->
