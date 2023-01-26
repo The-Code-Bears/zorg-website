@@ -41,7 +41,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('calendar-event', [CalenderController::class, 'index']);
+Route::get('calendar-event', [CalenderController::class, 'index'])->name('calender');
 Route::post('calendar-crud-ajax', [CalenderController::class, 'calendarEvents']);
 
 
