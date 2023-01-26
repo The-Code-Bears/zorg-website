@@ -1,25 +1,51 @@
-
-
-    <nav class="navbar navbar-expand-lg navbar-light p-3">
-        <div class="container-fluid">
-          <a class="navbar-brand" href=""><img src="" alt="" width="130px"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container">
+      <!-- Navbar brand -->
+      <a class="navbar-brand me-2" href="https://mdbgo.com/">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+          height="16"
+          alt="MDB Logo"
+          loading="lazy"
+          style="margin-top: -1px;"
+        />
+      </a>
   
-          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto ">
-              <li class="nav-item">
-                <a class="navlink mx-2" aria-current="page" href="">Referenties</a>
-              </li>
-              <li class="nav-item">
-                <a class="navlink mx-2" href="">Over mij</a>
-              </li>
-              <li class="nav-item">
-                <a class="navlink mx-2" href="">Contact</a>
-              </li>
-            </ul>
-          </div>
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarButtonsExample"
+        aria-controls="navbarButtonsExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarButtonsExample">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dashboard</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+  
+        <div class="d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="">Page 1</a>
+            <a class="nav-link" href="">Page 2</a>
+            <a class="nav-link" href="">Page 3</a>
+          </li>
         </div>
-      </nav>
-  
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
