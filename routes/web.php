@@ -17,19 +17,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home');
+})->name('home');
 
-Route::get('contact', [ContactFormController::class, 'create']);
+
+Route::get('contact', [ContactFormController::class, 'create']) ;
 Route::post('Contacts', [ContactFormController::class, 'store']);
 
 Route::post('/questions', [ContactFormController::class, 'view']);
 Route::post('/zorgvraag/reaction', [ContactFormController::class, 'viewReactZorgvraag']);
 Route::post('/zorgverleners/reaction', [ContactFormController::class, 'viewReactZorgverleeners']);
-
-Route::get('/home', function () {
-    return view ('home');
-});
 
 Route::get('/dashboard', function () {
     return view('dashboard');

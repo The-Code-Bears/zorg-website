@@ -6,5 +6,5 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
 <title>zorg voor je moeder</title>
-<link rel="stylesheet" href="{{ asset('css/app.css') }}" />
+<link rel="stylesheet" href="{{ asset('css/style.css') }}" />
 <script src="https://kit.fontawesome.com/b8f2f1decb.js" crossorigin="anonymous"></script>
