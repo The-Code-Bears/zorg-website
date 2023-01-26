@@ -6,11 +6,13 @@ use App\Models\question;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+
 class QuestionController extends Controller
 {
     public function view()
     {
-        return view('questions.overzicht');
+        $question = question::all();
+        return view('questions.overzicht', compact('question'));
     }
 
     public function viewReactZorgvraag()
