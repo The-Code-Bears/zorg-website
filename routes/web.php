@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\QuestionController;
+use App\Http\Controllers\CalenderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,11 +41,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
-    // ...
-    Route::resource('appointments', 'Admin\AppointmentsController');
-    Route::post('appointments_ajax_update',
-        ['uses' => 'Admin\AppointmentsController@ajaxUpdate', 'as' => 'appointments.ajax_update']);
-});
+Route::get('calendar-event', [CalenderController::class, 'index']);
+Route::post('calendar-crud-ajax', [CalenderController::class, 'calendarEvents']);
+
 
 require __DIR__.'/auth.php';
