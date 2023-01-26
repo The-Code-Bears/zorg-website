@@ -1,6 +1,6 @@
 <form class="form-horizontal" method="POST" action="/contact">
   
-  <div class="mapouter"><div class="gmap_canvas"><iframe width="800" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=Boerhaavelaan%2024&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+  <div class="mapouter"><div class="gmap_canvas"><iframe width="636" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=Boerhaavelaan%2024&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
   </iframe><br>
   <style>.mapouter{position:relative;align:center;height:250px;width:800px;}</style>
   <style>.gmap_canvas {overflow:hidden;background:none!important;height:250px;width:800px;}</style></div></div>
@@ -23,4 +23,5 @@
 
 </form>
 
-<style>.form-horizontal{background-color:#ff0080;box-shadow: 0 0 40px -10px #000;border-radius:8px;align:center;}</style>
+<style>.form-horizontal{background-color:#ffc1cc;box-shadow: 0 0 40px -10px #000;border-radius:15px;align:center;margin-top:20px;margin-right:-50%;margin-left:50%;}</style>
+<style>.col{align:center;}</style>
