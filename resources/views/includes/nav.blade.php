@@ -1,3 +1,4 @@
+
   <nav class="navbar navbar-expand-lg navbar-light p-3">
 	<div class="container-fluid">
 	  <a class="navbar-brand" href="#"><img src="{{ asset('img/logo.jpg') }}" width="50px"></a>
@@ -22,7 +23,7 @@
           <li class="nav-item">
 	        <a class="nav-link mx-2" href="#">Moeder</a>
 	      </li>
-          <li class="nav-item">
+          <li class="nav-item"> 
             @guest
                 <a class="nav-link" href="/login">Login</a>
             @endguest
@@ -39,4 +40,6 @@
 	    </ul>
 	  </div>
 	</div>
-	</nav>
+	</nav> 
+
+	
