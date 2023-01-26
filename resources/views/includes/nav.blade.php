@@ -1,25 +1,13 @@
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- Container wrapper -->
-    <div class="container">
-      <!-- Navbar brand -->
-      <a class="navbar-brand me-2" href="https://mdbgo.com/">
-        <img
-          src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
-          height="16"
-          alt="MDB Logo"
-          loading="lazy"
-          style="margin-top: -1px;"
-        />
-      </a>
-  
+    <div class="container-fluid">
       <!-- Toggle button -->
       <button
         class="navbar-toggler"
         type="button"
         data-mdb-toggle="collapse"
-        data-mdb-target="#navbarButtonsExample"
-        aria-controls="navbarButtonsExample"
+        data-mdb-target="#navbarCenteredExample"
+        aria-controls="navbarCenteredExample"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
@@ -27,25 +15,28 @@
       </button>
   
       <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarCenteredExample"
+      >
         <!-- Left links -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">Dashboard</a>
+            <a class="nav-link" href="#">Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Page1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Page2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Page3</a>
           </li>
         </ul>
         <!-- Left links -->
-  
-        <div class="d-flex align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="">Page 1</a>
-            <a class="nav-link" href="">Page 2</a>
-            <a class="nav-link" href="">Page 3</a>
-          </li>
-        </div>
       </div>
       <!-- Collapsible wrapper -->
     </div>
     <!-- Container wrapper -->
   </nav>
-  <!-- Navbar -->
