@@ -23,9 +23,9 @@ Route::get('/', function () {
 Route::get('contact', [ContactFormController::class, 'create']);
 Route::post('Contacts', [ContactFormController::class, 'store']);
 
-Route::post('/questions', [ContactFormController::class, 'view']);
-Route::post('/zorgvraag/reaction', [ContactFormController::class, 'viewReactZorgvraag']);
-Route::post('/zorgverleners/reaction', [ContactFormController::class, 'viewReactZorgverleeners']);
+Route::get('/questions', [QuestionController::class, 'view'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/zorgvraag/reaction', [QuestionController::class, 'viewReactZorgvraag'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/zorgverleners/reaction', [QuestionController::class, 'viewReactZorgverleeners'])->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/home', function () {
     return view ('home');
