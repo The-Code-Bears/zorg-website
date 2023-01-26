@@ -7,9 +7,10 @@
             {{ __('Questions') }}
         </h2>
     </x-slot>
-
+    
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <a href="{{ route("zorgvraag.reaction") }}" class="btn btn-primary bg-primary fs-6 mt-4 mb-5">Bericht schrijven</a>
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <table class="table">
                     <thead>
@@ -22,13 +23,16 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>Marco</td>
-                        <td>Test Subject</td>
-                        <td>dafddsaaaaaaaaaaaaaaaaaaaaaaa...</td>
-                        <th>00:00</th>
-                        <th><a href="{{ route("zorgvraag.reaction") }}" type="button" class="btn btn-primary bg-primary fs-6">Reageer</a></th>
-                      </tr>
+                    @foreach ($question as $post)
+                    <tr>
+                        <td>{{ $post->name }}</td>
+                        <td>{{ $post->subject }}</td>
+                        <td>{{ $post->question }}</td>
+                        <th>{{ $post->created_at }}</th>
+                        <th><a href="{{ route("zorgverleners.reaction") }}" type="button" class="btn btn-primary bg-primary fs-6">Reageer</a></th>
+                    </tr>
+                    @endforeach
+
                     </tbody>
                   </table>
             </div>
