@@ -22,6 +22,10 @@ Route::get('/', function () {
 Route::get('contact', [ContactFormController::class, 'create']);
 Route::post('Contacts', [ContactFormController::class, 'store']);
 
+Route::get('/home', function () {
+    return view ('home');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
