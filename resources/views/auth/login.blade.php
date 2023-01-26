@@ -41,7 +41,7 @@
                       <div class="text-center">
                         <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
                           style="width: 185px;" alt="logo">
-                        <h4 class="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
+                        <h4 class="mt-1 mb-5 pb-1">Zorg voor Je Moeder</h4>
                       </div>
 
                       <form method="POST" action="{{ route('login') }}">
