@@ -9,4 +9,5 @@
 <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
 <script src="https://kit.fontawesome.com/b8f2f1decb.js" crossorigin="anonymous"></script>
 
+<Link rel="stylesheet" href="{{ asset('css/style.css') }}"></Link>
 
