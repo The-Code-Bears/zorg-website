@@ -1,3 +1,4 @@
+
     <!-- Session Status -->
     @extends("layouts.base")
     <style>
@@ -105,4 +106,3 @@
           </div>
         </div>
       </section>
-

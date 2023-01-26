@@ -19,8 +19,13 @@ class DatabaseSeeder extends Seeder
             ['id' => 1,
             'name' => 'Admin',
             'email' => 'admin@admin.com',
-            'password' => bcrypt('admin123') ],
+            'password' => bcrypt('admin123') ,
+            'current_team_id' => '1' ],
         ];
         DB::table('users')->insert($users);
+
+        $this->call([
+            team::class,
+        ]);
     }
 }
