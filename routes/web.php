@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\QuestionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +22,10 @@ Route::get('/', function () {
 
 Route::get('contact', [ContactFormController::class, 'create']);
 Route::post('Contacts', [ContactFormController::class, 'store']);
+
+Route::post('/questions', [ContactFormController::class, 'view']);
+Route::post('/zorgvraag/reaction', [ContactFormController::class, 'viewReactZorgvraag']);
+Route::post('/zorgverleners/reaction', [ContactFormController::class, 'viewReactZorgverleeners']);
 
 Route::get('/home', function () {
     return view ('home');

@@ -14,15 +14,15 @@ return new class extends Migration
     public function up()
     {
 
-// -user_id
-// -name
-// -location
-// -subject
-// -question
-// -personal_team
-
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id');
+            $table->foreignId('to_user_id');
+            $table->string('name');
+            $table->string('location');
+            $table->string('subject');
+            $table->longText('question');
+            $table->foreignId('current_team_id')->nullable();
             $table->timestamps();
         });
     }
