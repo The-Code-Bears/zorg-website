@@ -23,9 +23,10 @@ Route::get('/', function () {
 Route::get('contact', [ContactFormController::class, 'create']);
 Route::post('Contacts', [ContactFormController::class, 'store']);
 
-Route::post('/questions', [ContactFormController::class, 'view']);
-Route::post('/zorgvraag/reaction', [ContactFormController::class, 'viewReactZorgvraag']);
-Route::post('/zorgverleners/reaction', [ContactFormController::class, 'viewReactZorgverleeners']);
+Route::get('/questions', [QuestionController::class, 'view'])->name('questions');
+Route::get('/zorgvraag/reaction', [QuestionController::class, 'viewReactZorgvraag']);
+Route::get('/zorgverleners/reaction', [QuestionController::class, 'viewReactZorgverleeners']);
+Route::post('/zorgverleners/store', [QuestionController::class, 'viewReactZorgverleeners_store'])->name('question.store');
 
 Route::get('/home', function () {
     return view ('home');
@@ -44,9 +45,8 @@ Route::middleware('auth')->group(function () {
 Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
     // ...
     Route::resource('appointments', 'Admin\AppointmentsController');
-    Route::post('appointments_ajax_update', 
+    Route::post('appointments_ajax_update',
         ['uses' => 'Admin\AppointmentsController@ajaxUpdate', 'as' => 'appointments.ajax_update']);
 });
 
 require __DIR__.'/auth.php';
- 
