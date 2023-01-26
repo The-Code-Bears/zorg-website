@@ -1,6 +1,8 @@
+@include("includes.head")
 
-    <!-- Session Status -->
-    @extends("layouts.base")
+
+   <!-- Session Status -->
+
     <style>
         .gradient-custom-2 {
         /* fallback for old browsers */
@@ -35,16 +37,16 @@
                 <div class="row g-0">
                   <div class="col-lg-6">
                     <div class="card-body p-md-5 mx-md-4">
-      
+
                       <div class="text-center">
                         <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
                           style="width: 185px;" alt="logo">
                         <h4 class="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
                       </div>
-      
+
                       <form method="POST" action="{{ route('login') }}">
                         @csrf
-      
+
                          <!-- Email Address -->
                         <div class="form-outline mb-4">
                             <x-input-label for="email" :value="__('Email')" />
@@ -55,12 +57,12 @@
                         <!-- Password -->
                         <div class="mt-4 form-outline mb-4">
                             <x-input-label for="password" :value="__('Password')" />
-                
+
                             <x-text-input id="password" class="form-control block mt-1 w-full"
                                             type="password"
                                             name="password"
                                             required autocomplete="current-password" />
-                
+
                             <x-input-error :messages="$errors->get('password')" class="mt-2" />
                         </div>
 
@@ -72,12 +74,12 @@
                             </label>
                         </div>
 
-      
+
                         <div class="text-center pt-1 mt-4 mb-5 pb-1">
                             <x-primary-button class="btn btn-primary btn-block align-middle gradient-custom-2 mb-3" type="submit">
                                 {{ __('Log in') }}
                             </x-primary-button>
-                            
+
                             @if (Route::has('password.request'))
                                 <a class="text-muted" href="{{ route('password.request') }}">
                                     {{ __('Forgot your password?') }}
@@ -85,11 +87,11 @@
                             @endif
 
                         </div>
-      
 
-      
+
+
                       </form>
-      
+
                     </div>
                   </div>
                   <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
