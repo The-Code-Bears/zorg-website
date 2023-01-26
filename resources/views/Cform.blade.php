@@ -1,5 +1,9 @@
 <form class="form-horizontal" method="POST" action="/contact">
   
+<div class="mapouter"><div class="gmap_canvas"><iframe width="800" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=Boerhaavelaan%2024&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+  </iframe><br>
+  <style>.mapouter{position:relative;align:center;height:250px;width:800px;}</style>
+  <style>.gmap_canvas {overflow:hidden;background:none!important;height:250px;width:800px;}</style></div></div>
       
   <div class="form-group">
    <label for="Name">Naam: </label>
@@ -16,9 +20,8 @@
   <div class="form-group">
     <button type="submit" class="btn btn-primary" value="Send">Versturen</button>
   </div>
-  <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Boerhaavelaan%2024&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-  </iframe><br>
-  <style>.mapouter{position:relative;text-align:right;height:400px;width:400px;}</style>
-  <style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:400px;}</style></div></div>
+
+  <style>.form-group{background-color:#ff0080;}
+
     
 </form>

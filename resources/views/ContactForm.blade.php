@@ -4,7 +4,7 @@
 <div class="container">
   <div class="row">
   <div class="col">
-  <h2 class="mx-auto text-center">Neem hier contact met ons op</h2>
+  <h2 class="mx-auto text-center">Vragen? Neem hier contact met ons op!</h2>
 @if(session('message'))
   <div class='alert alert-success'>
   {{ session('message') }}
