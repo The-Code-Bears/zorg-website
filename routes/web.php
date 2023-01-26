@@ -41,4 +41,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
+    // ...
+    Route::resource('appointments', 'Admin\AppointmentsController');
+    Route::post('appointments_ajax_update', 
+        ['uses' => 'Admin\AppointmentsController@ajaxUpdate', 'as' => 'appointments.ajax_update']);
+});
+
 require __DIR__.'/auth.php';
+ 
